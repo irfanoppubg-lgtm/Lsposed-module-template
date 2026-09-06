@@ -1,13 +1,9 @@
-plugins {
-    id 'com.android.application'
-}
-
 android {
-    namespace 'com.miao.assistant'
+    namespace 'com.example.module'
     compileSdk 34
 
     defaultConfig {
-        applicationId 'com.miao.assistant'
+        applicationId 'com.example.module'
         minSdk 27
         targetSdk 34
         versionCode 1
@@ -22,8 +18,10 @@ android {
             debuggable true
         }
     }
-}
 
-dependencies {
-    compileOnly 'de.robv.android.xposed:api:82'
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+        }
+    }
 }

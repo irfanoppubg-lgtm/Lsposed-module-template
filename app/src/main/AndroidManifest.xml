@@ -17,7 +17,7 @@
 
         <meta-data
             android:name="xposedminversion"
-            android:value="101" />
+            android:value="${xposedminversion}" />
 
     </application>
 
